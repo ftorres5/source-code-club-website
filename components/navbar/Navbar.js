@@ -8,9 +8,10 @@ import {
   IconButton,
   Container,
 } from "@mui/material";
-import Link from "../../src/Link";
 import DiscordIcon from "../icons/DiscordIcon";
 import { Code as CodeIcon } from "@mui/icons-material";
+import Navlink from "./Navlink";
+import navlinksData from "./navlinks-data";
 
 const Navbar = () => {
   return (
@@ -32,13 +33,15 @@ const Navbar = () => {
             </Typography>
 
             {/* Links */}
-            <Button
-              variant="text"
-              color="inherit"
-              href="/"
-              component={Link}
-              noLinkStyle
-            ></Button>
+
+            {navlinksData.map((navlink) => (
+              <Navlink
+                key={navlink.id}
+                name={navlink.name}
+                href={navlink.href}
+              />
+            ))}
+
             <IconButton aria-label="discord">
               <DiscordIcon />
             </IconButton>
