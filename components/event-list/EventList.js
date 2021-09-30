@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import Event from "./Event";
 
 import eventsData from "../mockups/events-data";
+import IconTypography from "../shared/IconTypography";
 
 const EventList = () => {
   const [events, setEvents] = useState([]);
@@ -16,10 +17,7 @@ const EventList = () => {
   return (
     <Box height="20rem">
       {/* Title */}
-      <Box display="flex" alignItems="center" sx={{ mb: 1 }}>
-        <EventIcon sx={{ mr: 0.5 }} />
-        <Typography variant="h5">Events</Typography>
-      </Box>
+      <IconTypography icon={<EventIcon />}>Events</IconTypography>
 
       {/* Events */}
       <Stack spacing={1}>
