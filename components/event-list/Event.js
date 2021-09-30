@@ -6,7 +6,6 @@ const Event = ({ id, data }) => {
 
   return (
     <Card
-      id={id}
       onMouseOver={() => setIsCollapse(true)}
       onMouseOut={() => setIsCollapse(false)}
       sx={{ borderRadius: 2, boxShadow: 2 }}
