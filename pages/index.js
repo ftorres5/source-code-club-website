@@ -5,6 +5,8 @@ import Copyright from "../src/Copyright";
 import Navbar from "../components/navbar/Navbar";
 import EventList from "../components/event-list/EventList";
 import About from "../components/about/About";
+import Team from "../components/team/Team";
+import ProjectList from "../components/project-list/ProjectList";
 
 export default function Index() {
   return (
@@ -33,10 +35,10 @@ export default function Index() {
             <EventList />
           </Grid>
           <Grid item xs={12}>
-            Projects
+            <Team />
           </Grid>
           <Grid item xs={12}>
-            Meet Our Team
+            <ProjectList />
           </Grid>
           <Grid item xs={12}>
             <Copyright />
