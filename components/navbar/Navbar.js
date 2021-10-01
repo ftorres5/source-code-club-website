@@ -8,7 +8,7 @@ import {
   IconButton,
   Container,
 } from "@mui/material";
-import DiscordIcon from "../icons/DiscordIcon";
+import DiscordIcon from "../assets/icons/DiscordIcon";
 import { Code as CodeIcon } from "@mui/icons-material";
 import Navlink from "./Navlink";
 import navlinksData from "./navlinks-data";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { Group as GroupIcon } from "@mui/icons-material";
-import IconTypography from "../shared/IconTypography";
+import IconTypography from "../components/shared/IconTypography";
 
 const Team = () => {
   return (
@@ -10,5 +10,5 @@ const Team = () => {
     </Box>
   );
 };
-
+console.log();
 export default Team;
