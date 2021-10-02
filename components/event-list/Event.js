@@ -1,14 +1,19 @@
 import { Card, CardContent, Collapse, Typography } from "@mui/material";
 import React, { useState } from "react";
 
-const Event = ({ id, data }) => {
+const Event = ({ data }) => {
   const [isCollapse, setIsCollapse] = useState(false);
 
   return (
     <Card
       onMouseOver={() => setIsCollapse(true)}
       onMouseOut={() => setIsCollapse(false)}
-      sx={{ borderRadius: 2, boxShadow: 2 }}
+      sx={{
+        borderRadius: 2,
+        borderLeft: 4,
+        borderColor: data.id % 2 ? "primary.main" : "secondary.main",
+        boxShadow: 2,
+      }}
     >
       <CardContent>
         <Typography variant="h5" component="div">

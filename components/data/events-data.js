@@ -14,9 +14,19 @@ const eventsData = {
       id: "1",
       name: "Knight Hacks Cave",
       instructor: "Knight Hacks Team",
-      time: "6:00 pm",
+      time: "7:00 pm",
       date: "01 Oct",
       location: "HS 125",
+      description:
+        "Available space for any Knight Hacks member to hangout, work on projects or homework, and socialize with projects directors/dev team members.",
+    },
+    {
+      id: "2",
+      name: "Arcane Monsters",
+      instructor: "Knight Hacks Team",
+      time: "6:00 pm",
+      date: "01 Oct",
+      location: "Campus",
       description:
         "Available space for any Knight Hacks member to hangout, work on projects or homework, and socialize with projects directors/dev team members.",
     },

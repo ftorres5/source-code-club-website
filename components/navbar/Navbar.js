@@ -11,7 +11,7 @@ import {
 import DiscordIcon from "../icons/DiscordIcon";
 import { Code as CodeIcon } from "@mui/icons-material";
 import Navlink from "./Navlink";
-import navlinksData from "./navlinks-data";
+import navlinksData from "../data/navlinks-data";
 
 const Navbar = () => {
   return (
