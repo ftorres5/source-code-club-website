@@ -29,7 +29,7 @@ const Navbar = () => {
               flexGrow={1}
               sx={{ textTransform: "uppercase" }}
             >
-              SSC @ VW
+              SCC @ VW
             </Typography>
 
             {/* Links */}
