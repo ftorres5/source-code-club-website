@@ -33,10 +33,8 @@ export default function Index() {
             <EventList />
           </Grid>
           <Grid item xs={12}>
-            <Team />
           </Grid>
           <Grid item xs={12}>
-            <ProjectList />
           </Grid>
           <Grid item xs={12}>
             <Copyright />

@@ -22,4 +22,5 @@ export default function About() {
       </Box>
     </Container>
   );
+  console.log(about());
 }
