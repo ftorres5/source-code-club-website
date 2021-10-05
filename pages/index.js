@@ -28,6 +28,7 @@ export default function Index() {
         <Grid container spacing={2}>
           <Grid item xs={8}>
             <About />
+            <about/>
           </Grid>
           <Grid item xs={4}>
             <EventList />
