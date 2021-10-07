@@ -17,10 +17,10 @@ export default function Index() {
           <EventList />
         </Grid>
         <Grid item xs={12}>
-          <Team />
+          <ProjectList />
         </Grid>
         <Grid item xs={12}>
-          <ProjectList />
+          <Team />
         </Grid>
       </Grid>
     </Layout>
