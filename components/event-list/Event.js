@@ -16,7 +16,7 @@ const Event = ({ data }) => {
       }}
     >
       <CardContent>
-        <Typography variant="h5" component="div">
+        <Typography variant="h6" fontWeight={400} component="div">
           {data.name}
         </Typography>
 
