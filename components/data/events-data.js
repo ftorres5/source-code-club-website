@@ -2,13 +2,13 @@ const eventsData = {
   data: [
     {
       id: "0",
-      name: "Intro to GitHub",
-      instructor: "Robert Boyd",
-      time: "6:00 pm",
-      date: "30 Sep",
-      location: "HS 119",
+      name: "Software Development Workshop",
+      instructor: "Felix Torres",
+      time: "5:30 pm",
+      date: "Friday 10/29",
+      location: "5728 Major Blvd Ste 200, Orlando, FL 32829",
       description:
-        "Learn how to manage all the code you write in the best way with this collaborative platform.",
+        "Learn about software development life cycle, what recruiters look for, developers Q&A",
     },
     {
       id: "1",
