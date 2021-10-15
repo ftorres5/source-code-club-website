@@ -1,4 +1,11 @@
-import { Card, CardContent, Collapse, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Chip,
+  Collapse,
+  Typography,
+} from "@mui/material";
 import React, { useState } from "react";
 
 const Event = ({ data }) => {
@@ -10,28 +17,39 @@ const Event = ({ data }) => {
       onMouseOut={() => setIsCollapse(false)}
       sx={{
         borderRadius: 2,
-        borderLeft: 4,
-        borderColor: data.id % 2 ? "primary.main" : "secondary.main",
         boxShadow: 2,
       }}
     >
       <CardContent>
-        <Typography variant="h6" fontWeight={400} component="div">
+        <Typography
+          variant="h6"
+          fontWeight={400}
+          component="div"
+          noWrap
+          gutterBottom
+        >
           {data.name}
         </Typography>
 
-        <Typography gutterBottom>
-          {data.time}&emsp;
+        <Typography variant="subtitle2" fontWeight={400}>
+          <Chip label={data.instructor} size="small" color="secondary" />
+          &emsp;
+          {data.time}
+          &emsp;
           {data.date}
         </Typography>
 
-        <Typography variant="body2" color="text.secondary">
-          {data.instructor}&emsp;
-          {data.location}
-        </Typography>
-
         <Collapse orientation="vertical" in={isCollapse}>
-          <Typography variant="body2" color="text.secondary">
+          <Box>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ mt: 2, mb: 1 }}
+            >
+              Location: {data.location}
+            </Typography>
+          </Box>
+          <Typography variant="body2" color="text.secondary" gutterBottom>
             {data.description}
           </Typography>
         </Collapse>
