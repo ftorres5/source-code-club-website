@@ -23,7 +23,7 @@ const Project = ({ data }) => {
       }}
     >
       <CardContent sx={{ flexGrow: 1, pb: 0.5 }}>
-        <Typography variant="h6" fontWeight={400} component="div">
+        <Typography variant="h6" fontWeight={400} component="div" noWrap>
           {data.name}
         </Typography>
         <Chip label={data.category} color="primary" size="small" />
