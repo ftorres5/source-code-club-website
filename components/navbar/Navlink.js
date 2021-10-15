@@ -4,17 +4,9 @@ import { Button } from "@mui/material";
 
 const Navlink = ({ name, href }) => {
   return (
-    <div>
-      <Button
-        variant="text"
-        color="inherit"
-        href={href}
-        component={Link}
-        noLinkStyle
-      >
-        {name}
-      </Button>
-    </div>
+    <Button variant="text" color="inherit" href={href} component={Link}>
+      {name}
+    </Button>
   );
 };
 
