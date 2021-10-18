@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { Link } from "../../src/Link";
+import Link from "../../src/Link";
 
 const Project = ({ data }) => {
   return (
